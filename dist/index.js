@@ -63,5 +63,15 @@ app.post("/bfhl", (req, res) => {
         });
     }
 });
+app.get("/bfhl", (_req, res) => {
+    res.status(200).json({
+        operation_code: 1,
+        description: "BFHL API is up and running",
+        available_routes: {
+            get: "/bfhl",
+            post: "/bfhl"
+        }
+    });
+});
 const PORT = 3000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
