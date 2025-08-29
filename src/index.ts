@@ -73,4 +73,4 @@ app.get("/bfhl", (_req: Request, res: Response) => {
 });
 
 const PORT = 3000;
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
