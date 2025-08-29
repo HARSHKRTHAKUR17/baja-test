@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
-// Replace with your details
 const FULL_NAME = "harsh_kumar_thakur";
 const DOB = "17072003";
 const EMAIL = "theharshkrthakur17@gmail.com";
@@ -35,7 +34,6 @@ app.post("/bfhl", (req, res) => {
                 specialChars.push(item);
             }
         });
-        // Concatenation in reverse order with alternating caps
         const concatString = inputData
             .filter((item) => /^[a-zA-Z]+$/.test(item))
             .join("")
@@ -74,4 +72,4 @@ app.get("/bfhl", (_req, res) => {
     });
 });
 const PORT = 3000;
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
