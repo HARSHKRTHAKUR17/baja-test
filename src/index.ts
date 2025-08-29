@@ -4,7 +4,6 @@ import express, { Request, Response } from "express";
 const app = express();
 app.use(express.json());
 
-// Replace with your details
 const FULL_NAME = "harsh_kumar_thakur";  
 const DOB = "17072003";        
 const EMAIL = "theharshkrthakur17@gmail.com";  
@@ -33,7 +32,7 @@ app.post("/bfhl", (req: Request, res: Response) => {
       }
     });
 
-    // Concatenation in reverse order with alternating caps
+    
     const concatString = inputData
       .filter((item) => /^[a-zA-Z]+$/.test(item))
       .join("")
